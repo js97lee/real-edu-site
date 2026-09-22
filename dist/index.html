@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#07070a">
   <title>REAL-Edu — 배운 오늘, 달라진 내일</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+    @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css');
 
     :root {
       --bg: #07070a;
@@ -32,8 +32,8 @@
         radial-gradient(circle at 85% 8%, rgba(98,75,255,.18), transparent 27rem),
         radial-gradient(circle at 10% 45%, rgba(0,174,255,.07), transparent 30rem),
         var(--bg);
-      font-family: 'Noto Sans KR', sans-serif;
-      line-height: 1.55;
+      font-family: 'NanumSquareNeo', 'NanumSquare Neo', sans-serif;
+      line-height: 2.325;
       overflow-x: hidden;
     }
     body::before {
@@ -48,7 +48,7 @@
     a { color: inherit; text-decoration: none; }
     button { font: inherit; }
     .wrap { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
-    .eyebrow { color: #bcbcc7; font: 700 .76rem/1.2 'DM Sans', sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+    .eyebrow { color: #bcbcc7; font: 700 .76rem/1.8 'NanumSquareNeo', 'NanumSquare Neo', sans-serif; letter-spacing: .18em; text-transform: uppercase; }
     .gradient-text { background: linear-gradient(100deg, #fff 4%, #8be5ff 40%, #9f7cff 68%, #ff73cc); -webkit-background-clip: text; color: transparent; }
 
     header {
@@ -60,7 +60,7 @@
     }
     header.scrolled { background: rgba(7,7,10,.8); backdrop-filter: blur(18px); border-color: var(--line); }
     nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .logo { display: flex; align-items: center; gap: 12px; font: 800 1.4rem/1 'DM Sans', sans-serif; }
+    .logo { display: flex; align-items: center; gap: 12px; font: 800 1.4rem/1.5 'NanumSquareNeo', 'NanumSquare Neo', sans-serif; }
     .logo-mark { width: 32px; height: 32px; border-radius: 10px; background: conic-gradient(from 210deg, var(--blue), var(--pink), var(--cyan), var(--blue)); box-shadow: inset 0 0 14px rgba(255,255,255,.45), 0 0 24px rgba(86,109,255,.25); position: relative; }
     .logo-mark::after { content: "R"; position: absolute; inset: 0; display: grid; place-items: center; color: #08080b; font-weight: 900; }
     .nav-links { display: flex; align-items: center; gap: 28px; color: #c5c5cf; font-size: .92rem; }
@@ -71,7 +71,7 @@
     .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 34px; align-items: center; }
     .hero-badge { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--line); background: rgba(255,255,255,.045); padding: 8px 13px; border-radius: 999px; color: #d7d7df; font-size: .83rem; }
     .hero-badge i { width: 8px; height: 8px; background: var(--lime); border-radius: 50%; box-shadow: 0 0 14px var(--lime); }
-    h1 { margin: 28px 0 25px; font-size: clamp(3.5rem, 7.7vw, 7.4rem); line-height: .91; letter-spacing: -.075em; font-weight: 900; }
+    h1 { margin: 28px 0 25px; font-size: clamp(3.5rem, 7.7vw, 7.4rem); line-height: 1.365; letter-spacing: -.075em; font-weight: 900; }
     h1 span { display: block; }
     .hero-copy { max-width: 600px; color: #b8b8c4; font-size: clamp(1.05rem, 1.65vw, 1.28rem); }
     .hero-copy strong { color: #fff; }
@@ -92,7 +92,7 @@
     .fc-two { right: -18px; top: 54px; }
     .orbital { position: absolute; inset: -22px; border: 1px solid rgba(120,127,255,.22); border-radius: 44px; transform: rotate(-4deg); }
 
-    .ticker { border-block: 1px solid var(--line); overflow: hidden; white-space: nowrap; padding: 16px 0; color: #d9d9e0; font: 700 .82rem/1 'DM Sans'; letter-spacing: .13em; }
+    .ticker { border-block: 1px solid var(--line); overflow: hidden; white-space: nowrap; padding: 16px 0; color: #d9d9e0; font: 700 .82rem/1.5 'NanumSquareNeo', 'NanumSquare Neo'; letter-spacing: .13em; }
     .ticker-track { display: inline-block; animation: tick 24s linear infinite; }
     .ticker span { margin-right: 42px; }
     .ticker b { color: var(--pink); margin-right: 12px; }
@@ -100,7 +100,7 @@
 
     section { padding: 120px 0; }
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
-    .section-head h2 { margin: 12px 0 0; font-size: clamp(2.2rem, 5vw, 4.7rem); line-height: 1.02; letter-spacing: -.06em; }
+    .section-head h2 { margin: 12px 0 0; font-size: clamp(2.2rem, 5vw, 4.7rem); line-height: 1.53; letter-spacing: -.06em; }
     .section-head p { max-width: 480px; color: var(--muted); margin: 0; }
 
     .specials { background: linear-gradient(180deg, transparent, rgba(86,109,255,.06), transparent); }
@@ -112,10 +112,10 @@
     .event-card.blue::before { right: -120px; bottom: -130px; background: var(--blue); }
     .event-card.pink::before { right: -110px; top: -130px; background: var(--pink); }
     .event-top { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
-    .event-num { font: 800 3.8rem/1 'DM Sans'; letter-spacing: -.06em; }
+    .event-num { font: 800 3.8rem/1.5 'NanumSquareNeo', 'NanumSquare Neo'; letter-spacing: -.06em; }
     .blue .event-num { color: #6c8dff; } .pink .event-num { color: #ff79cc; }
     .tag { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; font-size: .77rem; color: #d0d0da; }
-    .event-card h3 { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -.055em; line-height: 1.08; margin: 54px 0 12px; }
+    .event-card h3 { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -.055em; line-height: 1.62; margin: 54px 0 12px; }
     .date { font-size: 1.2rem; color: #e9e9ed; font-weight: 700; }
     .event-desc { max-width: 540px; color: var(--muted); margin: 22px 0 28px; }
     .checklist { display: grid; gap: 10px; color: #dedee6; font-size: .93rem; }
@@ -133,27 +133,27 @@
     .course:hover { transform: translateY(-6px); border-color: rgba(255,255,255,.3); background: var(--panel-2); }
     .course.hidden { display: none; }
     .course-meta { display: flex; justify-content: space-between; align-items: center; color: #aaaab5; font-size: .78rem; }
-    .course-icon { width: 58px; height: 58px; margin: 34px 0 28px; border-radius: 18px; display: grid; place-items: center; font: 800 1.15rem/1 'DM Sans'; color: #09090d; background: var(--accent, #fff); box-shadow: 0 13px 38px color-mix(in srgb, var(--accent, #fff) 18%, transparent); }
-    .course h3 { font-size: 1.42rem; line-height: 1.25; letter-spacing: -.03em; margin: 0 0 10px; }
+    .course-icon { width: 58px; height: 58px; margin: 34px 0 28px; border-radius: 18px; display: grid; place-items: center; font: 800 1.15rem/1.5 'NanumSquareNeo', 'NanumSquare Neo'; color: #09090d; background: var(--accent, #fff); box-shadow: 0 13px 38px color-mix(in srgb, var(--accent, #fff) 18%, transparent); }
+    .course h3 { font-size: 1.42rem; line-height: 1.875; letter-spacing: -.03em; margin: 0 0 10px; }
     .course p { color: var(--muted); margin: 0; font-size: .93rem; }
     .course-foot { display: flex; justify-content: space-between; color: #d6d6dc; font-size: .83rem; margin-top: auto; padding-top: 26px; }
 
     .principle { padding-top: 30px; }
     .principle-box { position: relative; min-height: 590px; border-radius: 34px; border: 1px solid var(--line); overflow: hidden; background: linear-gradient(135deg, #14141b, #08080c 70%); display: grid; grid-template-columns: 1fr 1fr; }
     .principle-copy { padding: clamp(38px, 6vw, 76px); z-index: 2; }
-    .principle h2 { font-size: clamp(2.6rem, 5vw, 5.5rem); line-height: .98; letter-spacing: -.07em; margin: 14px 0 28px; }
+    .principle h2 { font-size: clamp(2.6rem, 5vw, 5.5rem); line-height: 1.47; letter-spacing: -.07em; margin: 14px 0 28px; }
     .principle p { color: var(--muted); max-width: 500px; font-size: 1.03rem; }
     .steps { padding: 55px; display: grid; align-content: center; gap: 15px; }
     .step { display: grid; grid-template-columns: 52px 1fr; gap: 18px; padding: 22px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,.035); }
-    .step b { font: 800 1.3rem/1 'DM Sans'; color: var(--step); }
+    .step b { font: 800 1.3rem/1.5 'NanumSquareNeo', 'NanumSquare Neo'; color: var(--step); }
     .step strong { display: block; font-size: 1.05rem; }
     .step span { color: var(--muted); font-size: .88rem; }
 
     .contact { padding-bottom: 60px; }
     .contact-box { padding: clamp(36px, 7vw, 86px); text-align: center; border-radius: 34px; background: linear-gradient(120deg, #7487ff 0%, #a56ff2 48%, #ff78c6 100%); color: #08080b; position: relative; overflow: hidden; }
-    .contact-box::before { content: "REAL–EDU"; position: absolute; left: -15px; right: -15px; bottom: -46px; font: 900 clamp(5rem, 16vw, 13rem)/1 'DM Sans'; letter-spacing: -.07em; color: rgba(255,255,255,.14); }
+    .contact-box::before { content: "REAL–EDU"; position: absolute; left: -15px; right: -15px; bottom: -46px; font: 900 clamp(5rem, 16vw, 13rem)/1.5 'NanumSquareNeo', 'NanumSquare Neo'; letter-spacing: -.07em; color: rgba(255,255,255,.14); }
     .contact-box > * { position: relative; z-index: 1; }
-    .contact-box h2 { font-size: clamp(2.5rem, 6vw, 5.4rem); line-height: 1; letter-spacing: -.065em; margin: 10px 0 24px; }
+    .contact-box h2 { font-size: clamp(2.5rem, 6vw, 5.4rem); line-height: 1.5; letter-spacing: -.065em; margin: 10px 0 24px; }
     .contact-box p { font-size: 1.06rem; margin: 0 auto 30px; max-width: 620px; }
     .contact-box .btn { background: #08080b; color: #fff; border: 0; }
 
