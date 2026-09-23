@@ -78,7 +78,7 @@
     }
     .popup-overlay.show { opacity: 1; visibility: visible; }
     .holiday-popup {
-      width: min(100%, 600px);
+      width: min(100%, 500px);
       position: relative;
       overflow: auto;
       max-height: calc(100dvh - 40px);
@@ -91,8 +91,8 @@
       transition: transform .35s ease;
     }
     .popup-overlay.show .holiday-popup { transform: translateY(0) scale(1); }
-    .popup-art { display: block; width: 100%; height: clamp(190px, 30vh, 280px); object-fit: cover; object-position: center 48%; }
-    .popup-copy { padding: 26px 32px 30px; }
+    .popup-art { display: block; width: 100%; height: clamp(180px, 25vh, 220px); object-fit: cover; object-position: center 49%; }
+    .popup-copy { padding: 22px 28px 26px; }
     .popup-close {
       position: absolute;
       right: 18px;
@@ -138,9 +138,9 @@
     .logo-mark::after { content: "R"; position: absolute; inset: 0; display: grid; place-items: center; color: #08080b; font-weight: 900; }
     .nav-links { display: flex; align-items: center; gap: 28px; color: #c5c5cf; font-size: .86rem; font-weight: 700; }
     .nav-links a:hover { color: #fff; }
-    .nav-cta { background: #fff; color: #08080b !important; padding: 11px 18px; border-radius: 999px; font-weight: 800; }
+    .nav-cta { background: #fff; color: #08080b !important; padding: 8px 16px; border-radius: 999px; font-weight: 800; }
     .account-actions { display: flex; align-items: center; gap: 8px; margin-left: -12px; padding-left: 16px; border-left: 1px solid var(--line); }
-    .account-link { min-height: 42px; display: inline-flex; align-items: center; gap: 7px; padding: 0 12px; border: 1px solid transparent; border-radius: 12px; color: #e7e7ec; white-space: nowrap; }
+    .account-link { min-height: 38px; display: inline-flex; align-items: center; gap: 7px; padding: 0 11px; border: 1px solid transparent; border-radius: 12px; color: #e7e7ec; white-space: nowrap; }
     .account-link:hover { border-color: var(--line); background: rgba(255,255,255,.06); }
     .account-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
     .cart-count { min-width: 18px; height: 18px; display: inline-grid; place-items: center; border-radius: 999px; background: #7f8cff; color: #07070a; font-size: .66rem; font-weight: 900; }
@@ -154,7 +154,7 @@
     .hero-copy { max-width: 600px; color: #b8b8c4; font-size: clamp(.98rem, 1.35vw, 1.12rem); font-weight: 600; }
     .hero-copy strong { color: #fff; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
-    .btn { min-height: 54px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 15px; padding: 0 22px; font-weight: 800; border: 1px solid var(--line); transition: transform .2s, background .2s; cursor: pointer; }
+    .btn { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 13px; padding: 0 19px; font-weight: 800; border: 1px solid var(--line); transition: transform .2s, background .2s; cursor: pointer; }
     .btn:hover { transform: translateY(-3px); }
     .btn-primary { background: #7f8cff; color: #07070a; border: 0; box-shadow: 0 12px 36px rgba(127,140,255,.24); }
     .btn-primary:hover { background: #919cff; }
@@ -279,7 +279,7 @@
       .footer-meta { text-align: left; }
       .popup-overlay { padding: 14px; }
       .holiday-popup { border-radius: 24px; padding: 0; max-height: calc(100dvh - 28px); }
-      .popup-copy { padding: 22px 22px 24px; }
+      .popup-copy { padding: 18px 20px 21px; }
       .holiday-popup h2 { font-size: 2.2rem; }
       .popup-actions { display: grid; }
       .popup-actions .btn { width: 100%; }
@@ -307,7 +307,7 @@
   <div class="popup-overlay" id="holidayPopup" aria-hidden="true">
     <section class="holiday-popup" role="dialog" aria-modal="true" aria-labelledby="holidayPopupTitle">
       <button class="popup-close" type="button" aria-label="팝업 닫기">×</button>
-      <img class="popup-art" src="assets/holiday-moon-rabbit.png" alt="금빛 보름달 아래 절구로 떡을 찧는 흰 달토끼와 푸른 유리 링, 성장의 골드 화살표" width="1536" height="1024" fetchpriority="high" style="height:auto;aspect-ratio:3/2">
+      <img class="popup-art" src="assets/holiday-moon-rabbit.png" alt="금빛 보름달 아래 절구로 떡을 찧는 흰 달토끼와 푸른 유리 링, 성장의 골드 화살표" width="1536" height="1024" fetchpriority="high">
       <div class="popup-copy">
       <div class="popup-kicker">GOLDEN HOLIDAY · SPECIAL DROP</div>
       <h2 id="holidayPopupTitle">황금연휴,<br><span class="gradient-text">나도 버전업.</span></h2>
