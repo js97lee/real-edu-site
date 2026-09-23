@@ -139,6 +139,11 @@
     .nav-links { display: flex; align-items: center; gap: 28px; color: #c5c5cf; font-size: .86rem; font-weight: 700; }
     .nav-links a:hover { color: #fff; }
     .nav-cta { background: #fff; color: #08080b !important; padding: 11px 18px; border-radius: 999px; font-weight: 800; }
+    .account-actions { display: flex; align-items: center; gap: 8px; margin-left: -12px; padding-left: 16px; border-left: 1px solid var(--line); }
+    .account-link { min-height: 42px; display: inline-flex; align-items: center; gap: 7px; padding: 0 12px; border: 1px solid transparent; border-radius: 12px; color: #e7e7ec; white-space: nowrap; }
+    .account-link:hover { border-color: var(--line); background: rgba(255,255,255,.06); }
+    .account-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .cart-count { min-width: 18px; height: 18px; display: inline-grid; place-items: center; border-radius: 999px; background: #7f8cff; color: #07070a; font-size: .66rem; font-weight: 900; }
 
     .hero { min-height: 820px; padding: 145px 0 70px; display: grid; align-items: center; }
     .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 34px; align-items: center; }
@@ -238,6 +243,11 @@
 
     @media (max-width: 900px) {
       .nav-links a:not(.nav-cta) { display: none; }
+      .nav-links .account-actions, .nav-links .account-actions a { display: flex; }
+      .nav-links { gap: 12px; }
+      .account-actions { margin-left: 0; padding-left: 12px; }
+      .account-link span:not(.cart-count) { display: none; }
+      .account-link { width: 42px; padding: 0; justify-content: center; }
       .hero { padding-top: 125px; }
       .hero-grid, .principle-box { grid-template-columns: 1fr; }
       .hero-visual { min-height: 480px; margin: 30px 8px 0; }
@@ -249,6 +259,8 @@
     @media (max-width: 620px) {
       .wrap { width: min(calc(100% - 28px), var(--max)); }
       nav { height: 68px; }
+      .nav-cta { display: none !important; }
+      .account-actions { border-left: 0; padding-left: 0; }
       .hero { min-height: auto; padding: 108px 0 60px; }
       h1 { font-size: 3.05rem; }
       .hero-visual { min-height: 390px; }
@@ -284,6 +296,10 @@
         <a href="#courses">전체 강좌</a>
         <a href="#about">우리가 가르치는 법</a>
         <a class="nav-cta" href="mailto:studio.realday@gmail.com?subject=REAL-Edu 강의 문의">문의하기</a>
+        <div class="account-actions" aria-label="회원 메뉴">
+          <a class="account-link" href="login.html" aria-label="로그인"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg><span>로그인</span></a>
+          <a class="account-link" href="cart.html" aria-label="장바구니, 담긴 강좌 0개"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L20.5 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>장바구니</span><span class="cart-count">0</span></a>
+        </div>
       </div>
     </nav>
   </header>
