@@ -7,5 +7,5 @@ window.REAL_COURSES = [
  {id:'physical-computing',title:'센서로 시작하는 피지컬 컴퓨팅',price:null,format:'오프라인 · 5주',image:'assets/course-physical-computing.webp'},
  {id:'ai-agent',title:'나만의 AI 에이전트 만들기',price:null,format:'온라인 라이브 · 4주',image:'assets/course-ai-agent.webp'},
  {id:'brand-site-lab',title:'브랜드 사이트 크리에이티브 랩',price:null,format:'오프라인 · 8주',image:'assets/course-brand-site-lab.webp'},
- {id:'product-design',title:'아이디어를 제품으로, 산업디자인 랩',price:null,format:'프로젝트 과정 · 개강 일정 협의',image:'assets/course-product-design.svg'}
+ {id:'product-design',title:'아이디어를 제품으로, 산업디자인 랩',price:null,format:'프로젝트 과정 · 개강 일정 협의',image:'assets/course-product-design.webp'}
 ];
